@@ -23,8 +23,10 @@ Page({
     this.setData({y: e.detail.value})
   },
   begin:function(){
-    this.setData({target: Math.round(Math.random()*100)})
-    console.log(this.data.target)
+    this.setData({target: Math.round(Math.random()*100)});
+    this.setData({targetNumber: '?'});
+    this.setData({result: ''});
+    this.return();
   },
   return:function(){
     this.setData({x: 0});
