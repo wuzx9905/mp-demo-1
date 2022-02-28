@@ -6,7 +6,7 @@
   <view class="circle">
     {{targetNumber}}
   </view>
-  <view class="beginNum">开始猜数字</view>
+  <view class="beginNum">开始猜数字（0～100）</view>
   <view class="numbers">
     <picker class="number" value="{{x}}" range="{{arrayX}}" bindchange="setX">
       <text class="picker">{{x}}</text>
