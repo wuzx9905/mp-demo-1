@@ -1,21 +1,26 @@
-
 <view class="wrapper">
-  <view>
+  <view class="beginText">
     <button bindtap="begin">开始游戏</button>
   </view>
+
   <view class="circle">
     {{targetNumber}}
   </view>
+
   <view class="beginNum">开始猜数字（0～100）</view>
+
   <view class="numbers">
-    <picker class="number" value="{{x}}" range="{{arrayX}}" bindchange="setX">
-      <text class="picker">{{x}}</text>
-    </picker>
-    <picker class="number" value="{{y}}" range="{{arrayY}}" bindchange="setY">
-      <text class="picker">{{y}}</text>
-    </picker>
+    <view class="numberWrapper">
+      <picker class="number1" value="{{x}}" range="{{arrayX}}" bindchange="setX">
+        <text class="picker">{{x}}</text>
+      </picker>
+      <picker class="number2" value="{{y}}" range="{{arrayY}}" bindchange="setY">
+        <text class="picker">{{y}}</text>
+      </picker>
+    </view>
     <button bindtap="guess">确定</button>
   </view>
+
   <view class="result">
     {{result}}
   </view>
